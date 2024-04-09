@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Saver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Dark background color */
+            color: #f9f9f9; /* Light text color */
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Set container height to full viewport height */
+            padding-top: 50px; /* Adjusted to accommodate fixed header */
+            padding-bottom: 50px;
+            background-color: #333; /* Dark background color */
+        }
+        .section {
+            flex-basis: calc(25% - 40px); /* Adjusted to accommodate four sections with margin */
+            margin: 10px;
+            background-color: #444; /* Darker background color */
+            border-radius: 20px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden; /* Hide overflow content (links) */
+            height: 280px; /* Set a specific height for the cards */
+            overflow-y: auto; /* Add vertical scrollbar */
+        }
+        .section::-webkit-scrollbar {
+            display: none; /* Hide the scrollbar */
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .section:hover nav {
+            transform: translateY(0); /* Show links on hover */
+        }
+        .section nav {
+            padding: 20px;
+            transform: translateY(100%); /* Initially hide links */
+            transition: transform 0.3s ease;
+        }
+        nav a {
+            color: #f9f9f9; /* Light text color */
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555; /* Darker background color on hover */
+        }
+        h2 {
+            margin-top: 0;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #f9f9f9; /* Light text color */
+        }
+        @media screen and (max-width: 768px) {
+            .section {
+                flex-basis: calc(50% - 40px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .section {
+                flex-basis: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Memory Saver
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>School</h2>
+            <nav>
+                <a href="https://enrollment.psau.edu.ph/auth/login">Psau Prism</a>
+                <a href="https://www.facebook.com/PampangaStateAgriU/">PSAU FB</a>
+                <a href="https://docs.google.com/document/u/0/">Google Docs</a>
+                <a href="https://classroom.google.com/u/1/">Google Class</a>
+                <a href="https://online2pdf.com/multiple-pages-per-sheet">Creates Multiple-pages per sheet in pdf</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>Coding</h2>
+            <nav>
+                <a href="https://github.com">GitHub</a>
+                <a href="https://stackoverflow.com">Stack Overflow</a>                
+                <a href="https://submit.cs50.io/users/Inexxuss">Submitted Projects</a>                
+                <a href="https://www.python.org/">Python Docs</a>                
+                <a href="https://turbo-goldfish-97xqjw5464r299rp.github.dev/?folder=%2Fworkspaces%2F165245557&vscodeChannel=stable">Code Space</a>                
+                <a href="https://cs50.harvard.edu/python/2022/">CS50 Problems</a>
+                <a href="https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/home">CS50 Course Continuation</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>AI</h2>
+            <nav>
+                <a href="https://chat.openai.com/">ChatGpt</a>
+                <a href="https://gemini.google.com/app">Gemini</a>
+                <a href="https://claude.ai">ClaudAi - PDF Reader</a>
+                <a href="https://koala.sh/writer">Koala AI</a>
+                <a href="https://login.copy.ai/?client_id=client_01H9K5DP1DBFE11WNA648XCRPP&redirect_uri=https%3A%2F%2Fapp.copy.ai%2Flogin&response_type=code&state=%7B%22from%22%3A%22redirect%22%2C%22destination%22%3A%22%2Fprojects%2F36730573%3Ftool%3Dchat%26tab%3Dresults%22%7D">Copy Ai - Content Maker</a>
+                <a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Bing - Copilot Assist</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>Design</h2>
+            <nav>
+                <a href="https://dribbble.com">Dribbble</a>
+                <a href="https://behance.net">Behance</a>
+                <a href="https://www.solidbackgrounds.com/">Colors</a>
+                <a href="https://canva.com">Canva</a>
+                <a href="https://favicon.io/">Favicon</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>Learning Platforms</h2>
+            <nav>
+                <a href="https://www.coursera.org/">Coursera</a>
+                <a href="https://www.udemy.com/">Udemy</a>
+                <a href="https://www.edx.org/">edX</a>
+                <a href="https://alison.com/">Alison</a>
+                <a href="https://www.drawspace.com/">Drawspace</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>Research</h2>
+            <nav>
+                <a href="https://scholar.google.com/">Google Scholar</a>
+                <a href="https://www.researchgate.net/">ResearchGate</a>
+                <a href="https://arxiv.org/">arXiv</a>
+                <a href="https://sci-hub.se/">Sci-hub</a>
+                <a href="https://hbswk.hbs.edu/Pages/browse.aspx?HBSTopic=Research">Harvard Research School</a>
+            </nav>
+        </div>
+        <div class="section">
+            <h2>Storage</h2>
+                <nav>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </nav>
+        </div>
+        <div class="section">
+            <h2>Study Helper</h2>
+                <nav>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </nav>
+        </div>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+
+    </script>
+</body>
+</html>
