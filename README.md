@@ -44,8 +44,3 @@ Add or remove links by editing the HTML file. Customize the CSS file to change t
 ## Contributing
 Contributions to enhance Memory Saver are welcome! Please fork the repository, make your changes, and submit a pull request.
 
-## License
-This project is open-sourced under the MIT license.
-
-## Acknowledgements
-Thanks to all the web developers and designers who inspire and create accessible tools and resources.
